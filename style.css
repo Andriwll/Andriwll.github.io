@@ -1,0 +1,48 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+}
+
+#conteudo {
+    display: flex;
+    width: 100%;
+}
+
+#links {
+    background-color: #f1f1f1;
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#links li {
+    cursor: pointer;
+    transition: 0.3s ease;
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
+#links li:hover {
+    opacity: 1;
+}
+
+#respostas {
+    width: 70%;
+    padding: 20px;
+}
+
+.faq {
+    display: none;
+    margin: 20px;
+}
+
+.faq.active {
+    display: block;
+}
+
+.center-content {
+    text-align: center;
+}

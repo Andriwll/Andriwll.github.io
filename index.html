@@ -4,70 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BUJJA's things</title>
-
-    <style>
-        #links {
-            float: left;
-            max-width: 50%;
-        }
-
-        #links li {
-            cursor: pointer;
-            transition: 0.3s ease;
-            opacity: 0.7;
-        }
-
-        #links li:hover {
-            opacity: 1;
-        }
-
-        #respostas {
-            float: right;
-            max-width: 50%;
-        }
-
-        .faq {
-            margin: 20px;
-            display: none;
-            /* coloca todos como invisiveis inicialmente */
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Perguntas Frequentes</title>
 </head>
-
-<script>
-    function mostraResposta(id) {
-        respostas = document.getElementsByClassName('faq'); //recupera todos elementos da classe faq
-        for (var i = 0; i < respostas.length; i++) { // coloca todos eles invisiveis
-            respostas[i].style.display = 'none';
-        }
-
-        clicada = document.getElementById(id); //recupera o id passado por argumento
-        clicada.style.display = 'inherit'; //faz ele ser exibido conforme o item pai
-    }
-</script>
 
 <body>
 
-    <h1>andriwll.github.io</h1>
-    minhas coisas lol
     <div id="conteudo">
         <div id="links">
             <ul>
-                <li onclick="mostraResposta('lorem')">Devlog #1</li>
-                <li onclick="mostraResposta('ipsum')">Devlog #2</li>
+                <li onclick="mostraResposta('lorem')">Lorem</li>
+                <li onclick="mostraResposta('ipsum')">Ipsum</li>
             </ul>
         </div>
         <div id="respostas">
             <div id="lorem" class="faq">
-                lololololol
+                <div class="center-content">
+                    <h1>Lorem</h1>
+                    <p>Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem</p>
+                </div>
             </div>
             <div id="ipsum" class="faq">
-                memesmemesmemes
+                <div class="center-content">
+                    <h1>Ipsum</h1>
+                    <p>Ipsum Ipsum Ipsum Ipsum Ipsum Ipsum Ipsum Ipsum Ipsum Ipsum Ipsum Ipsum Ipsum Ipsum</p>
+                </div>
             </div>
         </div>
     </div>
-    </div>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
