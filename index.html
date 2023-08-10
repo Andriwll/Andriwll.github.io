@@ -1,22 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Site com Abas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Links no Centro da Tela</title>
+<style>
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .links-container {
+    text-align: center;
+  }
+  
+  .links-container a {
+    display: block;
+    margin: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .links-container a:hover {
+    color: #007bff;
+  }
+</style>
 </head>
 <body>
-  <div class="container">
-    <div class="sidebar">
-      <button class="tab" onclick="openTab('opcao1')">Opção 1</button>
-    </div>
-    <div class="content">
-      <div id="opcao1Content" class="tabContent">
-        <p>Texto relacionado com o link da Opção 1 aparece aqui.</p>
-      </div>
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
-</html>
+<div class="links-container">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link
