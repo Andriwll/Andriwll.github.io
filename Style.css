@@ -1,5 +1,21 @@
-div.ctext{
-    margin-left: auto;
-    margin-right: auto;
-    width: 5em;
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-link {
+    margin-right: 20px; /* Espaçamento entre o link e o conteúdo */
+}
+
+.center-content {
+    text-align: center;
+    /* Estilos adicionais para o conteúdo centralizado */
 }
