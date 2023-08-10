@@ -1,47 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Links no Centro da Tela</title>
-<style>
-  body {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f0f0f0;
-  }
-  
-  .links-container {
-    text-align: center;
-  }
-  
-  .links-container a {
-    display: block;
-    margin: 10px;
-    font-size: 18px;
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s ease;
-  }
-  
-  .links-container a:hover {
-    color: #007bff;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUJJA's things</title>
+
+    <style>
+        #links {
+            float: left;
+            max-width: 50%;
+        }
+
+        #links li {
+            cursor: pointer;
+            transition: 0.3s ease;
+            opacity: 0.7;
+        }
+
+        #links li:hover {
+            opacity: 1;
+        }
+
+        #respostas {
+            float: right;
+            max-width: 50%;
+        }
+
+        .faq {
+            margin: 20px;
+            display: none;
+            /* coloca todos como invisiveis inicialmente */
+        }
+    </style>
 </head>
+
+<script>
+    function mostraResposta(id) {
+        respostas = document.getElementsByClassName('faq'); //recupera todos elementos da classe faq
+        for (var i = 0; i < respostas.length; i++) { // coloca todos eles invisiveis
+            respostas[i].style.display = 'none';
+        }
+
+        clicada = document.getElementById(id); //recupera o id passado por argumento
+        clicada.style.display = 'inherit'; //faz ele ser exibido conforme o item pai
+    }
+</script>
+
 <body>
 
-    <h1>andriwll.github.io</h1> 
+    <h1>andriwll.github.io</h1>
     minhas coisas lol
-<div class="links-container">
-  <a href="#">Link 1</a>
-  <a href="#">Link 2</a>
-  <a href="#">Link 3</a>
-  <a href="#">Link 4</a>
-  <a href="#">Link 5</a>
-</div>
+    <div id="conteudo">
+        <div id="links">
+            <ul>
+                <li onclick="mostraResposta('lorem')">Devlog #1</li>
+                <li onclick="mostraResposta('ipsum')">Devlog #2</li>
+            </ul>
+        </div>
+        <div id="respostas">
+            <div id="lorem" class="faq">
+                lololololol
+            </div>
+            <div id="ipsum" class="faq">
+                memesmemesmemes
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
+
 </html>
