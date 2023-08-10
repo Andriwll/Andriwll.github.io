@@ -1,22 +1,38 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>BUJJA's Site</title>
-    <link rel="stylesheet" href="Style.css">
 </head>
 
 <body>
 
-    <div class="ctext">
-        <h1>Andriwll.github.io</h1>
-        hello world
+    <div class="sidebar">
+        <a href="#" class="sidebar-link" onclick="showContent('content1')">Link 1</a>
+        <a href="#" class="sidebar-link" onclick="showContent('content2')">Link 2</a>
+        <a href="#" class="sidebar-link" onclick="showContent('content3')">Link 3</a>
     </div>
 
-    <div class="container">
-        <a href="#" class="left-link">hello</a>
-        <div class="center-content">
-            <p>Conteúdo Centralizado</p>
+    <div class="content-container">
+        <div class="center-content" id="content1">
+            <h1>Content 1</h1>
+            <p>Content of Link 1</p>
         </div>
+        <div class="center-content" id="content2">
+            <h1>Content 2</h1>
+            <p>Content of Link 2</p>
+        </div>
+        <div class="center-content" id="content3">
+            <h1>Content 3</h1>
+            <p>Content of Link 3</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>

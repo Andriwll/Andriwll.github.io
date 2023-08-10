@@ -2,20 +2,33 @@ body, html {
     height: 100%;
     margin: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.container {
+.sidebar {
+    background-color: #333;
+    color: white;
+    width: 200px;
+    padding: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
-.left-link {
-    margin-right: 20px; /* Espaçamento entre o link e o conteúdo */
+.sidebar-link {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.content-container {
+    flex: 1;
+    padding: 20px;
 }
 
 .center-content {
     text-align: center;
-    /* Estilos adicionais para o conteúdo centralizado */
+    display: none;
+}
+
+.center-content.active {
+    display: block;
 }
