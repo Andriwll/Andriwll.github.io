@@ -1,8 +1,9 @@
-function showContent(contentId) {
-    var contents = document.querySelectorAll('.center-content');
-    for (var i = 0; i < contents.length; i++) {
-        contents[i].classList.remove('active');
+function openTab(tabName) {
+    const tabContents = document.getElementsByClassName("tabContent");
+    for (const content of tabContents) {
+      content.style.display = "none";
     }
-    var content = document.getElementById(contentId);
-    content.classList.add('active');
-}
+  
+    document.getElementById(tabName + "Content").style.display = "block";
+  }
+  
