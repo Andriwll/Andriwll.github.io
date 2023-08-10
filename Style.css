@@ -4,6 +4,11 @@ body, html {
     display: flex;
 }
 
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
 .sidebar {
     background-color: #333;
     color: white;
