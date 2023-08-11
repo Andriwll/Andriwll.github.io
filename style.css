@@ -35,7 +35,7 @@ body, html {
 
 .faq {
     display: none;
-    margin: 20px;
+    /*margin: 20px;*/
 }
 
 .faq.active {
