@@ -21,7 +21,7 @@ body, html {
     cursor: pointer;
     transition: 0.3s ease;
     opacity: 0.7;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px*/;
 }
 
 #links li:hover {
