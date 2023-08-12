@@ -1,41 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>BUJJA's Stuff</title>
 </head>
-
 <body>
-
     <div id="conteudo">
+        <div id="category-dropdown" class="dropdown">
+            <button onclick="toggleDropdown()">Categorias ▼</button>
+            <ul id="category-list">
+                <li onclick="filterByCategory('all')">Tudo</li>
+                <li onclick="filterByCategory('typingpalavras')">TypingPalavras</li>
+                <li onclick="filterByCategory('boardgame')">BoardGame</li>
+                <!-- Add more categories as needed -->
+            </ul>
+        </div>
         <div id="links">
             <ul class="center-content">
-                <li onclick="mostraResposta('Devlog#1')">Devlog #1</li>
-                <li onclick="mostraResposta('Devlog#2')">Devlog #2</li>
+                <li data-category="typingpalavras" onclick="mostraResposta('TypingPalavras#1')">Devlog#1</li>
+                <li data-category="typingpalavras" onclick="mostraResposta('TypingPalavras#2')">Devlog#2</li>
+                <li data-category="typingpalavras" onclick="mostraResposta('TypingPalavras#3')">Devlog#3</li>
+                <li data-category="boardgame" onclick="mostraResposta('BoardGame#1')">BoardGame #1</li>
+                <li data-category="boardgame" onclick="mostraResposta('BoardGame#2')">BoardGame #2</li>
+                <!-- Add more links as needed -->
             </ul>
         </div>
         <div id="respostas">
-            <div id="Devlog#1" class="faq">
+            <div id="TypingPalavras#1" class="faq">
                 <div class="center-content">
-                    <h1>Devlog #1</h1>
-                    <p>Fiquei familiarizado com o sistema unity, adicionando diversos itens de texto à tela</p>
+                    <h1>TypingPalavras #1</h1>
+                    <p>Familiarized with Unity and added text items to the screen.</p>
                 </div>
             </div>
-            <div id="Devlog#2" class="faq">
+            <div id="TypingPalavras#2" class="faq">
                 <div class="center-content">
-                    <h1>Devlog #2</h1>
-                    <p>Adicionei funcionalidades para o jogo, como temporizador, pontuação, digitação do usuário, comparação<br>
-                    de textos, traduções e dificuldades</p>
+                    <h1>TypingPalavras #2</h1>
+                    <p>Added game features like timer, score, user input, text comparison, translations, and difficulties. (basicamente tudo do protótipo dois)</p>
+                </div>
+            </div>
+            <div id="TypingPalavras#3" class="faq">
+                <div class="center-content">
+                    <h1>TypingPalavras #3</h1>
+                    <p>Tudo que eu for fazer depois do prototipo dois.</p>
+                </div>
+            </div>
+            
+            <div id="BoardGame#1" class="faq">
+                <div class="center-content">
+                    <h1>BoardGame #1</h1>
+                    <p>Content for BoardGame #1</p>
+                </div>
+            </div>
+            <!-- Add more content as needed -->
+                        <div id="BoardGame#2" class="faq">
+                <div class="center-content">
+                    <h1>BoardGame #2</h1>
+                    <p>Content for BoardGame #2</p>
                 </div>
             </div>
         </div>
     </div>
-
     <script src="script.js"></script>
-
 </body>
-
 </html>
