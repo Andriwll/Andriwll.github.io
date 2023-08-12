@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br"> <!-- Set the language to Portuguese -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>BUJJA's Stuff</title>
+    <title>Conteúdo do BUJJA</title> <!-- Title in Portuguese -->
 </head>
 <body>
     <div id="conteudo">
-        <div id="category-dropdown" class="dropdown">
-            <button onclick="toggleDropdown()">Categorias ▼</button>
-            <ul id="category-list">
-                <li onclick="filterByCategory('all')">Tudo</li>
-                <li onclick="filterByCategory('typingpalavras')">TypingPalavras</li>
-                <li onclick="filterByCategory('boardgame')">BoardGame</li>
+        <div id="leftbar"">
+        <div id="category-select">
+            <label for="category">Selecione a Categoria:</label> <br> <!-- Changed label text to Portuguese -->
+            <select id="category" onchange="filterByCategory(this.value)" class="categoria">
+                <option value="all">Todas</option> <!-- Changed option text to Portuguese -->
+                <option value="typingpalavras">TypingPalavras</option>
+                <option value="boardgame">BoardGame</option>
                 <!-- Add more categories as needed -->
-            </ul>
+            </select>
         </div>
-        <div id="links">
+        <div id="links"> 
             <ul class="center-content">
                 <li data-category="typingpalavras" onclick="mostraResposta('TypingPalavras#1')">Devlog#1</li>
                 <li data-category="typingpalavras" onclick="mostraResposta('TypingPalavras#2')">Devlog#2</li>
@@ -27,37 +28,38 @@
                 <!-- Add more links as needed -->
             </ul>
         </div>
+        </div>
         <div id="respostas">
             <div id="TypingPalavras#1" class="faq">
                 <div class="center-content">
                     <h1>TypingPalavras #1</h1>
-                    <p>Familiarized with Unity and added text items to the screen.</p>
+                    <p>Se familiarizou com Unity e adicionou itens de texto à tela.</p>
                 </div>
             </div>
             <div id="TypingPalavras#2" class="faq">
                 <div class="center-content">
                     <h1>TypingPalavras #2</h1>
-                    <p>Added game features like timer, score, user input, text comparison, translations, and difficulties. (basicamente tudo do protótipo dois)</p>
+                    <p>Adicionou funcionalidades ao jogo, como temporizador, pontuação, entrada do usuário, comparação de texto, traduções e dificuldades.</p>
                 </div>
             </div>
             <div id="TypingPalavras#3" class="faq">
                 <div class="center-content">
                     <h1>TypingPalavras #3</h1>
-                    <p>Tudo que eu for fazer depois do prototipo dois.</p>
+                    <p>Tudo que for adicionado após o terceiro prototipo.</p>
                 </div>
             </div>
             
             <div id="BoardGame#1" class="faq">
                 <div class="center-content">
                     <h1>BoardGame #1</h1>
-                    <p>Content for BoardGame #1</p>
+                    <p>Conteúdo para BoardGame #1</p>
                 </div>
             </div>
             <!-- Add more content as needed -->
-                        <div id="BoardGame#2" class="faq">
+            <div id="BoardGame#2" class="faq">
                 <div class="center-content">
                     <h1>BoardGame #2</h1>
-                    <p>Content for BoardGame #2</p>
+                    <p>Conteúdo para BoardGame #2</p>
                 </div>
             </div>
         </div>
