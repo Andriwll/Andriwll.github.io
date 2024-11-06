@@ -21,12 +21,12 @@ p {
 
 a {
 	text-align: center;
-	font-size: 18;
-	background-color: #B41055;
+	font-size: 20;
+	background-color: #0F9CA9;
 	padding: 10px;
 	border-radius: 10px;
 	display: block;
-	width: 100px;
+	width: 200px;
 	margin: auto;
-	color: #BFF6D0;
+	color: black;
 }
