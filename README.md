@@ -1,2 +1,2 @@
 # Andriwll.github.io
-Basically my game dev site.
+Meu site com informações relevantes sobre mim.
