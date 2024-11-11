@@ -7,8 +7,9 @@ body {
 }
 
 img {
-	margin: 30px 0 0 0 ;
-	border-radius: 75%;
+ 	margin-top: 100px;
+ 	border-radius: 75px;
+ 	animation: bounce 2s infinite;
 }
 
 h2 {
@@ -20,12 +21,8 @@ p {
 
 }
 
-a:hover {
-	color: white;
-	background-color: rebeccapurple;
-}
-
 a {
+	transition: transform 0.5s ease;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 	text-decoration: none;
 	text-align: center;
@@ -37,4 +34,30 @@ a {
 	width: 200px;
 	margin: auto;
 	color: white;
+}
+
+a:hover {
+	transform: scale(1.05);
+	color: white;
+	background-color: rebeccapurple;
+}
+
+
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-10px);
+  }
+
+  60% {
+    transform: translateY(-5px);
 }
